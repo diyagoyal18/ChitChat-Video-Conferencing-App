@@ -13,7 +13,7 @@ const Navbar = () => {
         height={32}
         className='max-sm:size-10'
         />
-        <p className='text-[26px] font-extrabold max-sm:hidden text-white'>Giggle Meet</p>
+        <p className='text-[26px] font-extrabold max-sm:hidden text-white'>Yapster</p>
         </Link>
     </nav>
   )
