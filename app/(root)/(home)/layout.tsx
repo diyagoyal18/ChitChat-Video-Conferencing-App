@@ -1,7 +1,15 @@
 import Navbar from '@/components/ui/Navbar'
 import Sidebar from '@/components/ui/Sidebar'
+import { Metadata } from 'next';
 import React, { Children, ReactNode } from 'react'
 
+export const metadata: Metadata = {
+  title: "ChitChat",
+  description: "A Video Conferencing App",
+  icons:{
+    icon: '/icons/logo.svg'
+  }
+};
 const HomeLayout = ({children}: {children : ReactNode}) => {
   return (
     <main className='relative'>
