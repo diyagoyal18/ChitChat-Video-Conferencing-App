@@ -7,12 +7,15 @@ import { useGetCalls } from '@/hooks/useGetCalls';
 import MeetingCard from './MeetingCard';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useToast } from './ui/use-toast';
 
 const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
   const router = useRouter();
   const { endedCalls, upcomingCalls, callRecordings, isLoading } =
     useGetCalls();
   const [recordings, setRecordings] = useState<CallRecording[]>([]);
+
+const {toast} = useToast();
 
   const getCalls = () => {
     switch (type) {
@@ -40,23 +43,32 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
     }
   };
 
+
   useEffect(() => {
     const fetchRecordings = async () => {
-      const callData = await Promise.all(
-        callRecordings?.map((meeting) => meeting.queryRecordings()) ?? [],
-      );
+      try{
 
-      const recordings = callData
+        const callData = await Promise.all(
+          callRecordings?.map((meeting) => meeting.queryRecordings()) ?? [],
+        );
+        
+        const recordings = callData
         .filter((call) => call.recordings.length > 0)
         .flatMap((call) => call.recordings);
-
-      setRecordings(recordings);
-    };
-
+        
+        setRecordings(recordings);
+      }
+      catch(error){
+        toast({title: 'Try again later'})
+      }
+    }
+      
+      
     if (type === 'recordings') {
       fetchRecordings();
     }
   }, [type, callRecordings]);
+  // flatMap se ye hota h ke suppose hmare paas boht saari recordings hai ek hi meeting ki and alag alag meetings ki bhi recordings hai to vo sb recordings ek array mei aajayengii..
 
   if (isLoading) return <Loader />;
 
