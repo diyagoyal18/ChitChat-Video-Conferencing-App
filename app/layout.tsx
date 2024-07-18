@@ -41,7 +41,10 @@ export default function RootLayout({
           colorInputBackground: "#252A41",
           colorInputText: "#fff",
         },
-      }}>
+      }} 
+      signInFallbackRedirectUrl="/"
+      signUpFallbackRedirectUrl="/"
+      >
 
         <body className={`${inter.className} bg-dark-2`}>{children}
           <Toaster/>
