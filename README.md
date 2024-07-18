@@ -3,11 +3,12 @@
   
   <h3 align="center">ChitChat- A Video Conferencing App</h3>
 
-## Demo
- **[Have a look](https://chitchat-2g3s2gzy5-diya-goyals-projects.vercel.app/)**
 
 </div>
 
+## Demo
+ **[Have a look](https://chitchat-2g3s2gzy5-diya-goyals-projects.vercel.app/)**
+ 
 ## 📋 <a name="table">Table of Contents</a>
 
 1. 🤖 [Introduction](#introduction)
