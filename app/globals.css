@@ -80,7 +80,9 @@
 .cl-userButtonPopoverActionButton {
   color: white;
 }
-
+.cl-dev-banner{
+  z-index: -1;  
+}
 /* =============================== */
 
 @layer utilities {

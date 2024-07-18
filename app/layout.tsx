@@ -3,10 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import {
   ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
+  
 } from '@clerk/nextjs'
 import '@stream-io/video-react-sdk/dist/css/styles.css';
 import 'react-datepicker/dist/react-datepicker.css'
@@ -17,7 +14,7 @@ export const metadata: Metadata = {
   title: "ChitChat",
   description: "A Video Conferencing App",
   icons:{
-    icon: '/icons/logo.svg'
+    icon: '/images/video.png'
   }
 };
 
@@ -32,7 +29,7 @@ export default function RootLayout({
       appearance={{
         layout: {
           socialButtonsVariant: "iconButton",
-          logoImageUrl: "/icons/logo.svg",
+          logoImageUrl: "/images/video.png",
         },
         variables: {
           colorText: "#fff",

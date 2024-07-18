@@ -3,8 +3,10 @@ import React from 'react'
 
 const Home = () => {
   const now = new Date();
-
-  const time = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+  const offsetIST = 5.5 * 60 * 60 * 1000; // IST is UTC +5:30
+  const nowUTC = now.getTime() + (now.getTimezoneOffset() * 60000);
+  const nowIST = new Date(nowUTC + offsetIST);
+  const time = nowIST.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
   const date = (new Intl.DateTimeFormat('en-US', { dateStyle: 'full' })).format(now);
   return (
     <section className='flex size-full flex-col gap-10 text-dark-3'>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "ChitChat",
   description: "A Video Conferencing App",
   icons:{
-    icon: '/icons/logo.svg'
+    icon: '/images/video.png'
   }
 };
 const HomeLayout = ({children}: {children : ReactNode}) => {
