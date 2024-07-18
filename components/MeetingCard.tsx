@@ -71,6 +71,7 @@ const MeetingCard = ({
                 navigator.clipboard.writeText(link);
                 toast({
                   title: "Link Copied",
+                  className:'bg-dark-3 text-white'
                 });
               }}
               className="bg-dark-4 px-6"

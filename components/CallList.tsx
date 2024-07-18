@@ -59,7 +59,9 @@ const {toast} = useToast();
         setRecordings(recordings);
       }
       catch(error){
-        toast({title: 'Try again later'})
+        toast({title: 'Try again later',
+          className:'bg-dark-3 text-white'
+        })
       }
     }
       

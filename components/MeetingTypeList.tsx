@@ -128,7 +128,9 @@ const router= useRouter();
          className="text-center"
          handleClick={()=>{
          navigator.clipboard.writeText(meetingLink);
-           toast({title: 'Link Copied'})
+           toast({title: 'Link Copied',
+            className:'bg-dark-3 text-white'
+           })
          }}
          image="/icons/checked.svg"
          buttonIcon="/icons/copy.svg"
