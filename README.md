@@ -7,7 +7,7 @@
 </div>
 
 ## 🫣 Demo
- **[Have a look](https://chitchat-2g3s2gzy5-diya-goyals-projects.vercel.app/)**
+ **[Have a look](https://chitchat-sigma.vercel.app/)**
 
 ## 📋 <a name="table">Table of Contents</a>
 
