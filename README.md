@@ -2,7 +2,9 @@
   <br />
   
   <h3 align="center">ChitChat- A Video Conferencing App</h3>
-     **[DEMO](https://chitchat-2g3s2gzy5-diya-goyals-projects.vercel.app/)**
+
+## Demo
+ **[Have a look](https://chitchat-2g3s2gzy5-diya-goyals-projects.vercel.app/)**
 
 </div>
 
@@ -78,7 +80,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/diyagoyal18/ChitChat-Video-Conferencing-App.git
-cd ChitChat
+cd ChitChat-Video-Conferencing-App
 ```
 
 **Installation**
