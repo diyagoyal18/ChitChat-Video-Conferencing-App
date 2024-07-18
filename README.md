@@ -6,9 +6,9 @@
 
 </div>
 
-## Demo
+## 🫣 Demo
  **[Have a look](https://chitchat-2g3s2gzy5-diya-goyals-projects.vercel.app/)**
- 
+
 ## 📋 <a name="table">Table of Contents</a>
 
 1. 🤖 [Introduction](#introduction)
