@@ -60,6 +60,20 @@
 
 .cl-userButtonPopoverActionButtonIcon {
   color: white;
+  
+}
+.cl-userButtonPopoverActionButtonIcon:hover {
+  color: rgb(144, 175, 209);
+  
+}
+.cl-navbarButton{
+  color: white;
+}
+.cl-badge{
+  color:rgb(144, 175, 209) ;
+}
+.cl-button:hover{
+  color: rgb(144, 175, 209);
 }
 
 .cl-logoBox {
